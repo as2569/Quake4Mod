@@ -9862,6 +9862,16 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 		if ( attacker->IsType( idPlayer::Type ) ) {
 			killer = static_cast<idPlayer*>(attacker);
 
+			//Spryszynski 
+
+			//Give QUAD to my killer if I have QUAD
+			//My code
+			if(PowerUpActive(POWERUP_QUADDAMAGE))
+			{
+				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 15*60*1000);
+			}
+			//End my code
+
 			lastKiller = killer;
  			if ( gameLocal.IsTeamGame() && killer->team == team ) {
 				// don't worry about team killers
