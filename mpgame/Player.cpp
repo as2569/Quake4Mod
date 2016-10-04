@@ -4380,18 +4380,20 @@ idPlayer::PowerUpModifier
 float idPlayer::PowerUpModifier( int type ) {
 	float mod = 1.0f;
 
+	//spryszynski
+	//changed damage to 0.5 from 3.0, knockback to 10.0 from 2.0
 	if ( PowerUpActive( POWERUP_QUADDAMAGE ) ) {
 		switch( type ) {
 			case PMOD_PROJECTILE_DAMAGE: {
-				mod *= 3.0f;
+				mod *= 0.5f;
 				break;
 			}
 			case PMOD_MELEE_DAMAGE: {
-				mod *= 3.0f;
+				mod *= 0.5f;
 				break;
 			}
 			case PMOD_PROJECTILE_DEATHPUSH: {
-				mod *= 2.0f;
+				mod *= 10.0f;
 				break;
 			}
 		}
