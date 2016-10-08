@@ -4381,10 +4381,11 @@ float idPlayer::PowerUpModifier( int type ) {
 	float mod = 1.0f;
 
 	//spryszynski
-	//changed damage to 0.5 from 3.0, knockback to 10.0 from 2.0
+	//changed damage to 0.5 from 3.0
 	if ( PowerUpActive( POWERUP_QUADDAMAGE ) ) {
 		switch( type ) {
 			case PMOD_PROJECTILE_DAMAGE: {
+				gameLocal.Printf("Dm Modified");
 				mod *= 0.5f;
 				break;
 			}
@@ -4393,7 +4394,7 @@ float idPlayer::PowerUpModifier( int type ) {
 				break;
 			}
 			case PMOD_PROJECTILE_DEATHPUSH: {
-				mod *= 10.0f;
+				mod *= 2.0f;
 				break;
 			}
 		}
@@ -9870,7 +9871,7 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 			//My code
 			if(PowerUpActive(POWERUP_QUADDAMAGE))
 			{
-				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 15*60*1000);
+				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 30);
 			}
 			//End my code
 

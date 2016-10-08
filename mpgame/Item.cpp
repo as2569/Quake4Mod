@@ -1118,7 +1118,7 @@ idItemPowerup::Spawn
 ================
 */
 void idItemPowerup::Spawn( void ) {
-	time = SEC2MS( spawnArgs.GetInt( "time", "30" ) );
+	time = SEC2MS( spawnArgs.GetInt( "time", "60" ) );
 	// SEC2MS screws up when we want -1 time (no expiration)
 	if( spawnArgs.GetInt( "time" ) == -1 ) {
 		time = -1;
