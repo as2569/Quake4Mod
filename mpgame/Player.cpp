@@ -9871,7 +9871,7 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 			//My code
 			if(PowerUpActive(POWERUP_QUADDAMAGE))
 			{
-				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 30);
+				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, -1);
 			}
 			//End my code
 
