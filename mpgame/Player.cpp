@@ -4403,11 +4403,11 @@ float idPlayer::PowerUpModifier( int type ) {
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
 			case PMOD_SPEED:	
-				mod *= 1.3f;
+				mod *= 0.8f;
 				break;
 
 			case PMOD_FIRERATE:
-				mod *= 0.7f;
+				mod *= 0.5f;
 				break;
 		}
 	}
