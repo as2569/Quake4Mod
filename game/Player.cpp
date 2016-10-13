@@ -4298,11 +4298,11 @@ float idPlayer::PowerUpModifier( int type ) {
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
 			case PMOD_SPEED:	
-				mod *= 1.3f;
+				mod *= 0.8f;
 				break;
 
 			case PMOD_FIRERATE:
-				mod *= 0.7f;
+				mod *= 0.5f;
 				break;
 		}
 	}
@@ -4685,6 +4685,13 @@ bool idPlayer::GivePowerUp( int powerup, int time, bool team ) {
 		
 		case POWERUP_QUADDAMAGE: {		
 			gameLocal.mpGame.ScheduleAnnouncerSound( AS_GENERAL_QUAD_DAMAGE, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1 );
+			nextHealthPulse = gameLocal.time + HEALTH_PULSE;
+
+			// Have to test for this because buying the team regeneration powerup will cause
+			// this to get hit multiple times as the server distributes the powerups to the clients.
+			if ( gameLocal.GetLocalPlayer() == this ) {
+				gameLocal.mpGame.ScheduleAnnouncerSound( AS_GENERAL_REGENERATION, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1 );
+			}
 			break;
 		}
 
@@ -4883,10 +4890,13 @@ void idPlayer::UpdatePowerUps( void ) {
 
 	// Reneration regnerates faster when less than maxHealth and can regenerate up to maxHealth * 2
 	if ( gameLocal.time > nextHealthPulse ) {
+		nextHealthPulse = gameLocal.time + HEALTH_PULSE;
+				health--;
 // RITUAL BEGIN
 // squirrel: health regen only applies if you have positive health
-		if( health > 0 ) {
-			if ( PowerUpActive ( POWERUP_REGENERATION ) || PowerUpActive ( POWERUP_GUARD ) ) {
+		//spryszynski
+		if( health > 0 &&  PowerUpActive (POWERUP_QUADDAMAGE)) {
+			
 				int healthBoundary = inventory.maxHealth; // health will regen faster under this value, slower above
 				int healthTic = 15;
 
@@ -4919,10 +4929,7 @@ void idPlayer::UpdatePowerUps( void ) {
 					nextHealthPulse = gameLocal.time + HEALTH_PULSE;
 				}	
 			// Health above max technically isnt a powerup but functions as one so handle it here
-			} else if ( health > inventory.maxHealth && gameLocal.isServer ) { 
-				nextHealthPulse = gameLocal.time + HEALTH_PULSE;
-				health--;
-			}
+
 		}
 // RITUAL END
 	}

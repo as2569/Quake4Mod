@@ -358,7 +358,16 @@ void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float powe
 	if( owner->IsType( idPlayer::GetClassType() ) && ent->IsType( idActor::GetClassType() ) && ent != owner && !((idPlayer*)owner)->pfl.dead ) {
 		statManager->WeaponHit( (idActor*)owner, ent, owner->GetCurrentWeapon() );
 	}
+// spryszynski
 // RAVEN END
+	if(ent->IsType(idPlayer::GetClassType()))
+	{
+		idPlayer *p=(idPlayer*)ent;
+		if(p->PowerUpActive(POWERUP_QUADDAMAGE))
+		{
+			p->GivePowerUp(POWERUP_HASTE, 5000);
+		}
+	}
 	ent->Damage( owner, owner, dir, spawnArgs.GetString ( "def_damage" ), power * owner->PowerUpModifier( PMOD_PROJECTILE_DAMAGE ), 0 );
 }
 
