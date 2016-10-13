@@ -64,7 +64,8 @@ public :
 	virtual void			ReadFromSnapshot( const idBitMsgDelta &msg );
 
 	virtual bool			ClientStale( void );
-	
+	float					detonateRadius;
+
 protected:
 	void					SpawnImpactEntities(const trace_t& collision, const idVec3 projectileDirection);
 
@@ -118,6 +119,7 @@ protected:
 // ddynerman: pre-prediction ( rocket jumping )
 	int						prePredictTime;
 // RAVEN END
+
 	typedef enum {
 		SPAWNED = 0,
 		CREATED = 1,
