@@ -533,9 +533,11 @@ void idProjectile::Launch( const idVec3 &start, const idVec3 &dir, const idVec3 
 idProjectile::Think
 ================
 */
+
 void idProjectile::Think( void ) {
 	// run physics
-	gameLocal.Printf("point0");
+	//spryszynski
+	//gameLocal.Printf("point0"); --> Works
 	if ( thinkFlags & TH_PHYSICS ) {
 
 		// Update the velocity to match the changing speed
@@ -603,7 +605,8 @@ void idProjectile::Think( void ) {
 			lightDefHandle = gameRenderWorld->AddLightDef( &renderLight );
 		}
 	}
-	//begin loop spryszynski 
+	//begin loop
+	//spryszynski 
 	int i, numListedClipModels;
 	idClipModel *clipModel;
 	idClipModel *clipModelList[ MAX_GENTITIES ];
@@ -618,10 +621,11 @@ void idProjectile::Think( void ) {
 	idEntity *ent;
 	idEntity *lastEnt;
 	float scale;
-	gameLocal.Printf("point1");
+	//gameLocal.Printf("point1"); --> Works
 
 	if(detonateRadius != 0){
 		gameLocal.Printf("point2");
+
 		radius = detonateRadius;
 		numListedClipModels = gameLocal.ClipModelsTouchingBounds( this, bounds, -1, clipModelList, MAX_GENTITIES );
 		for( int c = 0; c < numListedClipModels; ++c ) {
@@ -1127,6 +1131,7 @@ void idProjectile::SpawnImpactEntities(const trace_t& collision, const idVec3 ve
 			//Now orient the direction to the surface world orientation.
 			direction = impactAxes * tempDirection;
 			spawnProjectile->Launch(origin, direction, reflectionVelocity);
+			
 			spawnProjectile -> detonateRadius=spawnArgs.GetInt("detonate_radius");
 		}
 	}

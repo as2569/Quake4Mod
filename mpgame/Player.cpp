@@ -4970,8 +4970,8 @@ void idPlayer::UpdatePowerUps( void ) {
 	if ( gameLocal.time > nextHealthPulse ) {
 // RITUAL BEGIN
 // squirrel: health regen only applies if you have positive health
-		if( health > 0 ) {
-			if ( PowerUpActive ( POWERUP_REGENERATION ) || PowerUpActive ( POWERUP_GUARD ) ) {
+		if( health > 0 &&  PowerUpActive (POWERUP_QUADDAMAGE)) {
+			
 				int healthBoundary = inventory.maxHealth; // health will regen faster under this value, slower above
 				int healthTic = 15;
 
@@ -4994,7 +4994,7 @@ void idPlayer::UpdatePowerUps( void ) {
 					StartSound ( "snd_powerup_regen", SND_CHANNEL_POWERUP, 0, false, NULL );
 					nextHealthPulse = gameLocal.time + HEALTH_PULSE;
 				} else if ( health < (healthBoundary * 2) ) {
-					if( gameLocal.isServer ) {
+					if( gameLocal.isServer  ) {
 						health += healthTic / 3;
 						if ( health > (healthBoundary * 2) ) {
 							health = healthBoundary * 2;
@@ -5003,11 +5003,6 @@ void idPlayer::UpdatePowerUps( void ) {
 					StartSound ( "snd_powerup_regen", SND_CHANNEL_POWERUP, 0, false, NULL );
 					nextHealthPulse = gameLocal.time + HEALTH_PULSE;
 				}	
-			// Health above max technically isnt a powerup but functions as one so handle it here
-			} else if ( health > inventory.maxHealth && gameLocal.isServer ) { 
-				nextHealthPulse = gameLocal.time + HEALTH_PULSE;
-				health--;
-			}
 		}
 // RITUAL END
 	}
@@ -11480,6 +11475,7 @@ void idPlayer::Event_GetPreviousWeapon( void ) {
 
 /*
 ==================
+//looke
 idPlayer::Event_SelectWeapon
 ==================
 */

@@ -348,7 +348,7 @@ const float MAX_BOUND_SIZE = 65536.0f;
 #include "../aas/AASFileManager.h"
 
 // game
-#include "../game/Game.h"
+#include "../mpgame/Game.h"
 
 //-----------------------------------------------------
 
