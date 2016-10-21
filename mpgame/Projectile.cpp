@@ -537,7 +537,7 @@ idProjectile::Think
 void idProjectile::Think( void ) {
 	// run physics
 	//spryszynski
-	//gameLocal.Printf("point0"); --> Works
+	gameLocal.Printf("point0"); 
 	if ( thinkFlags & TH_PHYSICS ) {
 
 		// Update the velocity to match the changing speed
@@ -621,7 +621,7 @@ void idProjectile::Think( void ) {
 	idEntity *ent;
 	idEntity *lastEnt;
 	float scale;
-	//gameLocal.Printf("point1"); --> Works
+	gameLocal.Printf("point1");
 
 	if(detonateRadius != 0){
 		gameLocal.Printf("point2");

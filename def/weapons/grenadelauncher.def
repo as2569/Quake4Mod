@@ -89,7 +89,7 @@ entityDef weapon_grenadelauncher
 	"weaponname"				"Grenade Launcher"
 	"def_projectile"			"projectile_grenade"
 	"ammoType"					"ammo_grenadelauncher"
-	"clipSize"					"8"
+	"clipSize"					"12"
 	"ammoRequired"				"1"
 	"mtr_icon"					"gfx/guis/hud/icons/gun_grenadelauncher"
 
@@ -136,25 +136,6 @@ entityDef weapon_grenadelauncher
 	"net_syncPhysics"			"1"
 }
 
-entityDef weapon_grenadelauncher_mp
-{
-	"inherit"				"weapon_grenadelauncher"
-	"clipsize"				"4"
-	"editor_ignore"				"1"
-	"inv_icon"				"gfx/guis/hud/icons/item_grenade_colored"
-	"triggerSize"				"32"
-	
-	"muzzle_kick_time"			"0"
-	"muzzle_kick_maxtime"			"0"
-	"muzzle_kick_angles"			"0 0 0"
-	"muzzle_kick_offset"			"0 0 0"
-	"recoilTime"				"0"
-	"recoilAngles"				"0 0 0"
-
-	"respawn_Team DM"			"30"
-	"respawn_Tourney"			"15"
-
-}
 
 entityDef moveable_item_grenadelauncher
 {
@@ -238,20 +219,21 @@ entityDef projectile_grenade
 																											
 	"speed"						"700"
 	"angular_velocity"			"-10 5 1"
-	"settle_duration"			"1"
+	"settle_duration"			"0"
 	
-	"linear_friction"			"20"
-	"angular_friction"			"20"
-	"contact_friction"			"20"
+	"linear_friction"			"2000"
+	"angular_friction"			"2000"
+	"contact_friction"			"2000"
 	"bounce"					"0"
 	"gravity"					"1"
-	"fuse"						"12"
+	"fuse"						"25"
 								
 	"detonate_on_fuse"			"1"
 	"detonate_on_death"			"0"
 	"detonate_on_world"			"0"
 	"detonate_on_actor"			"1"
 	"detonateTestGroundMaterial"	"1"
+	"detonate_range"			"2"
 								
 	"impact_gib"				"1"								
 	"decal_size"				"75"

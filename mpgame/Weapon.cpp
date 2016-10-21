@@ -2705,8 +2705,8 @@ void rvWeapon::LaunchProjectiles ( idDict& dict, const idVec3& muzzleOrigin, con
 // RAVEN END
 			muzzle_pos = tr.endpos;
 		}
-		
-		// Launch the actual projectile
+		//Spryszynski
+		//Launch the actual projectile
 		proj->Launch( muzzle_pos + startOffset , dir, pushVelocity, fuseOffset, power );
 		gameLocal.Printf("think flags %d\n", proj->thinkFlags);
 		// Increment the projectile launch count and let the derived classes

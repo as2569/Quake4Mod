@@ -1,0 +1,702 @@
+﻿Build started 10/20/2016 11:46:01 AM.
+     1>Project "C:\Quake4-1.4.2-SDK\source\mpgame.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D GAME_DLL /D GAME_MPAPI /D Q4SDK /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yc /Fp"Debug\mpgamex86.dll\mpgame/mpgame.pch" /Fo"Debug\mpgamex86.dll\mpgame/" /Fd"Debug\mpgamex86.dll\mpgamex86.pdb" /Gd /TP /analyze- /errorReport:prompt mpgame\AF.cpp
+         AF.cpp
+     1>c:\quake4-1.4.2-sdk\source\idlib\lib.h(120): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(406): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(446): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(501): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(503): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(512): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(514): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(527): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(605): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(615): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(625): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(634): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(643): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\str.h(652): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\idlib\base64.h(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_interpreter.h(151): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_interpreter.h(153): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\af.cpp(1152): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\af.cpp(1282): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\af.cpp(1290): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D GAME_DLL /D GAME_MPAPI /D Q4SDK /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu /Fp"Debug\mpgamex86.dll\mpgame/mpgame.pch" /Fo"Debug\mpgamex86.dll\mpgame/" /Fd"Debug\mpgamex86.dll\mpgamex86.pdb" /Gd /TP /analyze- /errorReport:prompt mpgame\Actor.cpp mpgame\AFEntity.cpp mpgame\BrittleFracture.cpp mpgame\Camera.cpp mpgame\Effect.cpp mpgame\Entity.cpp mpgame\Game_Debug.cpp mpgame\Game_local.cpp mpgame\Game_Log.cpp mpgame\Game_network.cpp mpgame\GameEdit.cpp mpgame\Healing_Station.cpp mpgame\Icon.cpp mpgame\IconManager.cpp mpgame\IK.cpp mpgame\Instance.cpp mpgame\Item.cpp mpgame\Light.cpp mpgame\LipSync.cpp mpgame\Misc.cpp mpgame\Moveable.cpp mpgame\Mover.cpp mpgame\MultiplayerGame.cpp mpgame\Playback.cpp mpgame\Player_Cheats.cpp mpgame\Projectile.cpp mpgame\Pvs.cpp mpgame\SecurityCamera.cpp mpgame\Sound.cpp mpgame\SplineMover.cpp mpgame\Target.cpp mpgame\TramGate.cpp mpgame\Trigger.cpp mpgame\WorldSpawn.cpp mpgame\Lagometer.cpp mpgame\ai\AAS.cpp mpgame\ai\AAS_debug.cpp mpgame\ai\AAS_Find.cpp mpgame\ai\AAS_pathing.cpp mpgame\ai\AAS_routing.cpp mpgame\ai\AAS_tactical.cpp mpgame\ai\AI.cpp mpgame\ai\AI_Actions.cpp mpgame\ai\AI_Announcements.cpp mpgame\ai\AI_Debug.cpp mpgame\ai\AI_events.cpp mpgame\ai\AI_Manager.cpp mpgame\ai\AI_Medic.cpp mpgame\ai\AI_Move.cpp mpgame\ai\AI_pathing.cpp mpgame\ai\AI_States.cpp mpgame\ai\AI_Tactical.cpp mpgame\ai\AI_Util.cpp mpgame\ai\Monster_Berserker.cpp mpgame\ai\Monster_BossBuddy.cpp mpgame\ai\Monster_BossMakron.cpp mpgame\ai\Monster_ConvoyGround.cpp mpgame\ai\Monster_ConvoyHover.cpp mpgame\ai\Monster_FailedTransfer.cpp mpgame\ai\Monster_Fatty.cpp mpgame\ai\Monster_Gladiator.cpp mpgame\ai\Monster_Grunt.cpp mpgame\ai\Monster_Gunner.cpp mpgame\ai\Monster_Harvester.cpp mpgame\ai\Monster_HarvesterDispersal.cpp mpgame\ai\Monster_HeavyHoverTank.cpp mpgame\ai\Monster_IronMaiden.cpp mpgame\ai\Monster_LightTank.cpp mpgame\ai\Monster_NetworkGuardian.cpp mpgame\ai\Monster_RepairBot.cpp mpgame\ai\Monster_Scientist.cpp mpgame\ai\Monster_Sentry.cpp mpgame\ai\Monster_SlimyTransfer.cpp mpgame\ai\Monster_StreamProtector.cpp mpgame\ai\Monster_StroggFlyer.cpp mpgame\ai\Monster_StroggHover.cpp mpgame\ai\Monster_StroggMarine.cpp mpgame\ai\Monster_TeleportDropper.cpp mpgame\ai\Monster_Turret.cpp mpgame\ai\Monster_TurretFlying.cpp mpgame\spawner.cpp mpgame\ai\VehicleAI.cpp mpgame\anim\Anim.cpp mpgame\anim\Anim_Blend.cpp mpgame\anim\Anim_Import.cpp mpgame\anim\Anim_Testmodel.cpp mpgame\client\ClientAFEntity.cpp mpgame\client\ClientEffect.cpp mpgame\client\ClientEntity.cpp mpgame\client\ClientModel.cpp mpgame\client\ClientMoveable.cpp mpgame\gamesys\Class.cpp mpgame\gamesys\DebugGraph.cpp mpgame\gamesys\Event.cpp mpgame\gamesys\SaveGame.cpp mpgame\gamesys\State.cpp mpgame\gamesys\SysCmds.cpp mpgame\gamesys\SysCvar.cpp mpgame\physics\Clip.cpp mpgame\physics\Force.cpp mpgame\physics\Force_Constant.cpp mpgame\physics\Force_Drag.cpp mpgame\physics\Force_Field.cpp mpgame\physics\Force_Spring.cpp mpgame\physics\Physics.cpp mpgame\physics\Physics_Actor.cpp mpgame\physics\Physics_AF.cpp mpgame\physics\Physics_Base.cpp mpgame\physics\Physics_Monster.cpp mpgame\physics\Physics_Parametric.cpp mpgame\physics\Physics_Particle.cpp mpgame\physics\Physics_Player.cpp mpgame\physics\Physics_RigidBody.cpp mpgame\physics\Physics_Static.cpp mpgame\physics\Physics_StaticMulti.cpp mpgame\physics\Physics_VehicleMonster.cpp mpgame\physics\Push.cpp mpgame\Player.cpp mpgame\Player_States.cpp mpgame\PlayerView.cpp mpgame\script\Script_Compiler.cpp mpgame\script\Script_Interpreter.cpp mpgame\script\Script_Program.cpp mpgame\script\Script_Thread.cpp mpgame\script\ScriptFuncUtility.cpp mpgame\vehicle\Vehicle.cpp mpgame\vehicle\Vehicle_DropPod.cpp mpgame\vehicle\Vehicle_Walker.cpp mpgame\vehicle\VehicleAnimated.cpp mpgame\vehicle\VehicleController.cpp mpgame\vehicle\VehicleDriver.cpp mpgame\vehicle\VehicleMonster.cpp mpgame\vehicle\VehicleParts.cpp mpgame\vehicle\VehiclePosition.cpp mpgame\vehicle\VehicleRigid.cpp mpgame\vehicle\VehicleSpline.cpp mpgame\vehicle\VehicleStatic.cpp mpgame\Weapon.cpp mpgame\weapon\WeaponBlaster.cpp mpgame\weapon\WeaponDarkMatterGun.cpp mpgame\weapon\WeaponGauntlet.cpp mpgame\weapon\WeaponGrenadeLauncher.cpp mpgame\weapon\WeaponHyperblaster.cpp mpgame\weapon\WeaponLightningGun.cpp mpgame\weapon\WeaponMachinegun.cpp mpgame\weapon\WeaponNailgun.cpp mpgame\weapon\WeaponNapalmGun.cpp mpgame\weapon\WeaponRailgun.cpp mpgame\weapon\WeaponRocketLauncher.cpp mpgame\weapon\WeaponShotgun.cpp mpgame\mp\Buying.cpp mpgame\mp\CTF.cpp mpgame\mp\GameState.cpp mpgame\mp\Tourney.cpp mpgame\mp\VoiceComms.cpp mpgame\mp\stats\StatEvent.cpp mpgame\mp\stats\StatManager.cpp mpgame\mp\stats\StatWindow.cpp
+         Actor.cpp
+         AFEntity.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\afentity.cpp(3103): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         BrittleFracture.cpp
+         Camera.cpp
+         Effect.cpp
+         Entity.cpp
+         Game_Debug.cpp
+         Game_local.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_local.cpp(10): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_local.cpp(3848): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_local.cpp(5036): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_local.cpp(8478): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_local.cpp(8493): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+         Game_Log.cpp
+         Game_network.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_network.cpp(2353): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\game_network.cpp(2549): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : see declaration of 'strncpy'
+         GameEdit.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gameedit.cpp(336): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Healing_Station.cpp
+         Icon.cpp
+         IconManager.cpp
+         IK.cpp
+         Instance.cpp
+         Item.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\item.cpp(1642): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Light.cpp
+         LipSync.cpp
+         Misc.cpp
+         Generating Code...
+         Compiling...
+         Moveable.cpp
+         Mover.cpp
+         MultiplayerGame.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\multiplayergame.cpp(1559): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\multiplayergame.cpp(3584): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Playback.cpp
+         Player_Cheats.cpp
+         Projectile.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\projectile.cpp(623): warning C4101: 'scale' : unreferenced local variable
+         Pvs.cpp
+         SecurityCamera.cpp
+         Sound.cpp
+         SplineMover.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\splinemover.cpp(1663): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Target.cpp
+         TramGate.cpp
+         Trigger.cpp
+         WorldSpawn.cpp
+         Lagometer.cpp
+         AAS.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AAS_debug.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas_debug.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AAS_Find.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas_find.cpp(11): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AAS_pathing.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas_pathing.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AAS_routing.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas_routing.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+     1>c:\quake4-1.4.2-sdk\source\mpgame\projectile.cpp(664): warning C4700: uninitialized local variable 'lastEnt' used
+         Compiling...
+         AAS_tactical.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\aas_tactical.cpp(52): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Actions.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_actions.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Announcements.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_announcements.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Debug.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_debug.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_events.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_events.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Manager.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_manager.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Medic.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_medic.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Move.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_move.cpp(13): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_pathing.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_pathing.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_States.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_states.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Tactical.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_tactical.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         AI_Util.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\ai_util.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Berserker.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_berserker.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_BossBuddy.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_bossbuddy.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_BossMakron.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_bossmakron.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_ConvoyGround.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_convoyground.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_ConvoyHover.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_convoyhover.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_FailedTransfer.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_failedtransfer.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Fatty.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_fatty.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+         Compiling...
+         Monster_Gladiator.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_gladiator.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Grunt.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_grunt.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Gunner.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_gunner.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Harvester.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_harvester.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_HarvesterDispersal.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_harvesterdispersal.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_HeavyHoverTank.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_heavyhovertank.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_IronMaiden.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_ironmaiden.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_LightTank.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_lighttank.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_NetworkGuardian.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_networkguardian.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_RepairBot.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_repairbot.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Scientist.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_scientist.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Sentry.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_sentry.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_SlimyTransfer.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_slimytransfer.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_StreamProtector.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_streamprotector.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_StroggFlyer.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_stroggflyer.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_StroggHover.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_strogghover.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_StroggMarine.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_stroggmarine.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_TeleportDropper.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_teleportdropper.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_Turret.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_turret.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Monster_TurretFlying.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\monster_turretflying.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+         Compiling...
+         spawner.cpp
+         VehicleAI.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\ai\vehicleai.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Anim.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\anim\anim.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Anim_Blend.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\anim\anim_blend.cpp(6): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Anim_Import.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\anim\anim_import.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Anim_Testmodel.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\anim\anim_testmodel.cpp(24): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         ClientAFEntity.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\client\clientafentity.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         ClientEffect.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\client\clienteffect.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         ClientEntity.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\client\cliententity.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         ClientModel.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\client\clientmodel.cpp(9): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         ClientMoveable.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\client\clientmoveable.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Class.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\class.cpp(8): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         DebugGraph.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\debuggraph.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Event.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(8): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(55): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(97): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(115): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\event.cpp(135): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+         SaveGame.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\savegame.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\savegame.cpp(1086): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+         State.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\state.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         SysCmds.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\syscmds.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\syscmds.cpp(815): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\syscmds.cpp(1691): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+         SysCvar.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\syscvar.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\gamesys\syscvar.cpp(36): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+         Clip.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\clip.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Force.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\force.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+         Compiling...
+         Force_Constant.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\force_constant.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Force_Drag.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\force_drag.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Force_Field.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\force_field.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Force_Spring.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\force_spring.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Actor.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_actor.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_AF.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_af.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Base.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_base.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Monster.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_monster.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Parametric.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_parametric.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Particle.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_particle.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Player.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_player.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_RigidBody.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_rigidbody.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_Static.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_static.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_StaticMulti.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_staticmulti.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Physics_VehicleMonster.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\physics_vehiclemonster.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Push.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\physics\push.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Player.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\player.cpp(3535): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\player.cpp(3540): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Player_States.cpp
+         PlayerView.cpp
+         Generating Code...
+         Compiling...
+         Script_Compiler.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_compiler.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_compiler.cpp(226): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_compiler.cpp(244): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+         Script_Interpreter.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_interpreter.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_interpreter.cpp(447): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_interpreter.cpp(472): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+         Script_Program.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_program.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_program.cpp(543): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_program.cpp(587): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_program.cpp(631): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_program.cpp(759): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Script_Thread.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_thread.cpp(2): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_thread.cpp(919): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\script_thread.cpp(935): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'vsprintf'
+         ScriptFuncUtility.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\script\scriptfuncutility.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Vehicle.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicle.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicle.cpp(1577): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
+         Vehicle_DropPod.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicle_droppod.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Vehicle_Walker.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicle_walker.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleAnimated.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicleanimated.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleController.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehiclecontroller.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleDriver.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicledriver.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleMonster.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehiclemonster.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleParts.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicleparts.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehiclePosition.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehicleposition.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleRigid.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehiclerigid.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleSpline.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehiclespline.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VehicleStatic.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\vehicle\vehiclestatic.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Weapon.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon.cpp(2332): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+         WeaponBlaster.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponblaster.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponDarkMatterGun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weapondarkmattergun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+         Compiling...
+         WeaponGauntlet.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weapongauntlet.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponGrenadeLauncher.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weapongrenadelauncher.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponHyperblaster.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponhyperblaster.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponLightningGun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponlightninggun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponMachinegun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponmachinegun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponNailgun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponnailgun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponNapalmGun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponnapalmgun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponRailgun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponrailgun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponRocketLauncher.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponrocketlauncher.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         WeaponShotgun.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\weapon\weaponshotgun.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Buying.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\buying.cpp(12): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         CTF.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\ctf.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         GameState.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\gamestate.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Tourney.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\tourney.cpp(7): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         VoiceComms.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\voicecomms.cpp(1): warning C4627: '#include "../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         StatEvent.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\stats\statevent.cpp(7): warning C4627: '#include "../../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         StatManager.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\stats\statmanager.cpp(7): warning C4627: '#include "../../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\stats\statmanager.cpp(914): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\stats\statmanager.cpp(915): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.h(153) : see declaration of 'asctime'
+         StatWindow.cpp
+     1>c:\quake4-1.4.2-sdk\source\mpgame\mp\stats\statwindow.cpp(7): warning C4627: '#include "../../../idlib/precompiled.h"': skipped when looking for precompiled header use
+                 Add directive to 'precompiled header (.h) file' or rebuild precompiled header
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(C:\Quake4-1.4.2-SDK\source\../Win32/Debug/Debug\mpgamex86.dllmpgamex86.dll.dll) does not match the Linker's OutputFile property value (C:\Quake4-1.4.2-SDK\source\Debug\mpgamex86.dll\mpgamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(Debug\mpgamex86.dllmpgamex86.dll) does not match the Linker's OutputFile property value (mpgamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\mpgamex86.dll\mpgamex86.dll" /INCREMENTAL /NOLOGO Debug\mpgamex86.dll\idLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\mpgame\mpgame.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\mpgamex86.dll\mpgamex86.pdb" /STACK:"16000000","16000000" /LARGEADDRESSAWARE /TLBID:1 /BASE:"0x20000000" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH /FIXED:no /DLL Debug\mpgamex86.dll\mpgame/Actor.obj
+         Debug\mpgamex86.dll\mpgame/AF.obj
+         Debug\mpgamex86.dll\mpgame/AFEntity.obj
+         Debug\mpgamex86.dll\mpgame/BrittleFracture.obj
+         Debug\mpgamex86.dll\mpgame/Camera.obj
+         Debug\mpgamex86.dll\mpgame/Effect.obj
+         Debug\mpgamex86.dll\mpgame/Entity.obj
+         Debug\mpgamex86.dll\mpgame/Game_Debug.obj
+         Debug\mpgamex86.dll\mpgame/Game_local.obj
+         Debug\mpgamex86.dll\mpgame/Game_Log.obj
+         Debug\mpgamex86.dll\mpgame/Game_network.obj
+         Debug\mpgamex86.dll\mpgame/GameEdit.obj
+         Debug\mpgamex86.dll\mpgame/Healing_Station.obj
+         Debug\mpgamex86.dll\mpgame/Icon.obj
+         Debug\mpgamex86.dll\mpgame/IconManager.obj
+         Debug\mpgamex86.dll\mpgame/IK.obj
+         Debug\mpgamex86.dll\mpgame/Instance.obj
+         Debug\mpgamex86.dll\mpgame/Item.obj
+         Debug\mpgamex86.dll\mpgame/Light.obj
+         Debug\mpgamex86.dll\mpgame/LipSync.obj
+         Debug\mpgamex86.dll\mpgame/Misc.obj
+         Debug\mpgamex86.dll\mpgame/Moveable.obj
+         Debug\mpgamex86.dll\mpgame/Mover.obj
+         Debug\mpgamex86.dll\mpgame/MultiplayerGame.obj
+         Debug\mpgamex86.dll\mpgame/Playback.obj
+         Debug\mpgamex86.dll\mpgame/Player_Cheats.obj
+         Debug\mpgamex86.dll\mpgame/Projectile.obj
+         Debug\mpgamex86.dll\mpgame/Pvs.obj
+         Debug\mpgamex86.dll\mpgame/SecurityCamera.obj
+         Debug\mpgamex86.dll\mpgame/Sound.obj
+         Debug\mpgamex86.dll\mpgame/SplineMover.obj
+         Debug\mpgamex86.dll\mpgame/Target.obj
+         Debug\mpgamex86.dll\mpgame/TramGate.obj
+         Debug\mpgamex86.dll\mpgame/Trigger.obj
+         Debug\mpgamex86.dll\mpgame/WorldSpawn.obj
+         Debug\mpgamex86.dll\mpgame/Lagometer.obj
+         Debug\mpgamex86.dll\mpgame/AAS.obj
+         Debug\mpgamex86.dll\mpgame/AAS_debug.obj
+         Debug\mpgamex86.dll\mpgame/AAS_Find.obj
+         Debug\mpgamex86.dll\mpgame/AAS_pathing.obj
+         Debug\mpgamex86.dll\mpgame/AAS_routing.obj
+         Debug\mpgamex86.dll\mpgame/AAS_tactical.obj
+         Debug\mpgamex86.dll\mpgame/AI.obj
+         Debug\mpgamex86.dll\mpgame/AI_Actions.obj
+         Debug\mpgamex86.dll\mpgame/AI_Announcements.obj
+         Debug\mpgamex86.dll\mpgame/AI_Debug.obj
+         Debug\mpgamex86.dll\mpgame/AI_events.obj
+         Debug\mpgamex86.dll\mpgame/AI_Manager.obj
+         Debug\mpgamex86.dll\mpgame/AI_Medic.obj
+         Debug\mpgamex86.dll\mpgame/AI_Move.obj
+         Debug\mpgamex86.dll\mpgame/AI_pathing.obj
+         Debug\mpgamex86.dll\mpgame/AI_States.obj
+         Debug\mpgamex86.dll\mpgame/AI_Tactical.obj
+         Debug\mpgamex86.dll\mpgame/AI_Util.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Berserker.obj
+         Debug\mpgamex86.dll\mpgame/Monster_BossBuddy.obj
+         Debug\mpgamex86.dll\mpgame/Monster_BossMakron.obj
+         Debug\mpgamex86.dll\mpgame/Monster_ConvoyGround.obj
+         Debug\mpgamex86.dll\mpgame/Monster_ConvoyHover.obj
+         Debug\mpgamex86.dll\mpgame/Monster_FailedTransfer.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Fatty.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Gladiator.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Grunt.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Gunner.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Harvester.obj
+         Debug\mpgamex86.dll\mpgame/Monster_HarvesterDispersal.obj
+         Debug\mpgamex86.dll\mpgame/Monster_HeavyHoverTank.obj
+         Debug\mpgamex86.dll\mpgame/Monster_IronMaiden.obj
+         Debug\mpgamex86.dll\mpgame/Monster_LightTank.obj
+         Debug\mpgamex86.dll\mpgame/Monster_NetworkGuardian.obj
+         Debug\mpgamex86.dll\mpgame/Monster_RepairBot.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Scientist.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Sentry.obj
+         Debug\mpgamex86.dll\mpgame/Monster_SlimyTransfer.obj
+         Debug\mpgamex86.dll\mpgame/Monster_StreamProtector.obj
+         Debug\mpgamex86.dll\mpgame/Monster_StroggFlyer.obj
+         Debug\mpgamex86.dll\mpgame/Monster_StroggHover.obj
+         Debug\mpgamex86.dll\mpgame/Monster_StroggMarine.obj
+         Debug\mpgamex86.dll\mpgame/Monster_TeleportDropper.obj
+         Debug\mpgamex86.dll\mpgame/Monster_Turret.obj
+         Debug\mpgamex86.dll\mpgame/Monster_TurretFlying.obj
+         Debug\mpgamex86.dll\mpgame/spawner.obj
+         Debug\mpgamex86.dll\mpgame/VehicleAI.obj
+         Debug\mpgamex86.dll\mpgame/Anim.obj
+         Debug\mpgamex86.dll\mpgame/Anim_Blend.obj
+         Debug\mpgamex86.dll\mpgame/Anim_Import.obj
+         Debug\mpgamex86.dll\mpgame/Anim_Testmodel.obj
+         Debug\mpgamex86.dll\mpgame/ClientAFEntity.obj
+         Debug\mpgamex86.dll\mpgame/ClientEffect.obj
+         Debug\mpgamex86.dll\mpgame/ClientEntity.obj
+         Debug\mpgamex86.dll\mpgame/ClientModel.obj
+         Debug\mpgamex86.dll\mpgame/ClientMoveable.obj
+         Debug\mpgamex86.dll\mpgame/Class.obj
+         Debug\mpgamex86.dll\mpgame/DebugGraph.obj
+         Debug\mpgamex86.dll\mpgame/Event.obj
+         Debug\mpgamex86.dll\mpgame/SaveGame.obj
+         Debug\mpgamex86.dll\mpgame/State.obj
+         Debug\mpgamex86.dll\mpgame/SysCmds.obj
+         Debug\mpgamex86.dll\mpgame/SysCvar.obj
+         Debug\mpgamex86.dll\mpgame/Clip.obj
+         Debug\mpgamex86.dll\mpgame/Force.obj
+         Debug\mpgamex86.dll\mpgame/Force_Constant.obj
+         Debug\mpgamex86.dll\mpgame/Force_Drag.obj
+         Debug\mpgamex86.dll\mpgame/Force_Field.obj
+         Debug\mpgamex86.dll\mpgame/Force_Spring.obj
+         Debug\mpgamex86.dll\mpgame/Physics.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Actor.obj
+         Debug\mpgamex86.dll\mpgame/Physics_AF.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Base.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Monster.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Parametric.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Particle.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Player.obj
+         Debug\mpgamex86.dll\mpgame/Physics_RigidBody.obj
+         Debug\mpgamex86.dll\mpgame/Physics_Static.obj
+         Debug\mpgamex86.dll\mpgame/Physics_StaticMulti.obj
+         Debug\mpgamex86.dll\mpgame/Physics_VehicleMonster.obj
+         Debug\mpgamex86.dll\mpgame/Push.obj
+         Debug\mpgamex86.dll\mpgame/Player.obj
+         Debug\mpgamex86.dll\mpgame/Player_States.obj
+         Debug\mpgamex86.dll\mpgame/PlayerView.obj
+         Debug\mpgamex86.dll\mpgame/Script_Compiler.obj
+         Debug\mpgamex86.dll\mpgame/Script_Interpreter.obj
+         Debug\mpgamex86.dll\mpgame/Script_Program.obj
+         Debug\mpgamex86.dll\mpgame/Script_Thread.obj
+         Debug\mpgamex86.dll\mpgame/ScriptFuncUtility.obj
+         Debug\mpgamex86.dll\mpgame/Vehicle.obj
+         Debug\mpgamex86.dll\mpgame/Vehicle_DropPod.obj
+         Debug\mpgamex86.dll\mpgame/Vehicle_Walker.obj
+         Debug\mpgamex86.dll\mpgame/VehicleAnimated.obj
+         Debug\mpgamex86.dll\mpgame/VehicleController.obj
+         Debug\mpgamex86.dll\mpgame/VehicleDriver.obj
+         Debug\mpgamex86.dll\mpgame/VehicleMonster.obj
+         Debug\mpgamex86.dll\mpgame/VehicleParts.obj
+         Debug\mpgamex86.dll\mpgame/VehiclePosition.obj
+         Debug\mpgamex86.dll\mpgame/VehicleRigid.obj
+         Debug\mpgamex86.dll\mpgame/VehicleSpline.obj
+         Debug\mpgamex86.dll\mpgame/VehicleStatic.obj
+         Debug\mpgamex86.dll\mpgame/Weapon.obj
+         Debug\mpgamex86.dll\mpgame/WeaponBlaster.obj
+         Debug\mpgamex86.dll\mpgame/WeaponDarkMatterGun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponGauntlet.obj
+         Debug\mpgamex86.dll\mpgame/WeaponGrenadeLauncher.obj
+         Debug\mpgamex86.dll\mpgame/WeaponHyperblaster.obj
+         Debug\mpgamex86.dll\mpgame/WeaponLightningGun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponMachinegun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponNailgun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponNapalmGun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponRailgun.obj
+         Debug\mpgamex86.dll\mpgame/WeaponRocketLauncher.obj
+         Debug\mpgamex86.dll\mpgame/WeaponShotgun.obj
+         Debug\mpgamex86.dll\mpgame/Buying.obj
+         Debug\mpgamex86.dll\mpgame/CTF.obj
+         Debug\mpgamex86.dll\mpgame/GameState.obj
+         Debug\mpgamex86.dll\mpgame/Tourney.obj
+         Debug\mpgamex86.dll\mpgame/VoiceComms.obj
+         Debug\mpgamex86.dll\mpgame/StatEvent.obj
+         Debug\mpgamex86.dll\mpgame/StatManager.obj
+         Debug\mpgamex86.dll\mpgame/StatWindow.obj
+     1>LINK : fatal error LNK1104: cannot open file 'Debug\mpgamex86.dll\idLib.lib'
+     1>Done Building Project "C:\Quake4-1.4.2-SDK\source\mpgame.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:13.64

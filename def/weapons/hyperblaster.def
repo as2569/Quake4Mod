@@ -295,13 +295,10 @@ entityDef projectile_hyperblaster
 	"def_damage"				"damage_hyperblaster"
 
 	"detonate_on_world"			"0"
-	"bounce"					"12"
+	"bounce"					"100"
 	"bounce_count"				"4"
-	"bounce_center"				"0"
 
-	"linear_friction"			"0"
-	"angular_friction"			"0"
-	"contact_friction"			"0"
+
 	
 	"speed"						"1600"
 	"orient_towards_motion"		"1"
