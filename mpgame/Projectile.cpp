@@ -537,9 +537,8 @@ idProjectile::Think
 void idProjectile::Think( void ) {
 	// run physics
 	//spryszynski
-	gameLocal.Printf("point0"); 
-	if ( thinkFlags & TH_PHYSICS ) {
 
+	if ( thinkFlags & TH_PHYSICS ) {
 		// Update the velocity to match the changing speed
 		if ( updateVelocity ) {
 			idVec3 vel;
@@ -605,88 +604,7 @@ void idProjectile::Think( void ) {
 			lightDefHandle = gameRenderWorld->AddLightDef( &renderLight );
 		}
 	}
-	//begin loop
-	//spryszynski 
-	int i, numListedClipModels;
-	idClipModel *clipModel;
-	idClipModel *clipModelList[ MAX_GENTITIES ];
-	idVec3 dir;
-	idVec3 v;
-	idVec3 damagePoint;
-	float dist;
-	float radius;
-	idVec3 origin = physicsObj.GetOrigin();
-	idBounds bounds;
-	modelTrace_t result;
-	idEntity *ent;
-	idEntity *lastEnt;
-	float scale;
-	gameLocal.Printf("point1");
-
-	if(detonateRadius != 0){
-		gameLocal.Printf("point2");
-
-		radius = detonateRadius;
-		numListedClipModels = gameLocal.ClipModelsTouchingBounds( this, bounds, -1, clipModelList, MAX_GENTITIES );
-		for( int c = 0; c < numListedClipModels; ++c ) {
-			clipModel = clipModelList[ c ];
-			assert( clipModel );
-
-			ent = clipModel->GetEntity();
-		
-			//Skip non-players
-			if (!ent->IsType(idPlayer::GetClassType())) {
-				continue;
-			}
-			idBounds absBounds = clipModel->GetAbsBounds();
-
-			// find the distance from the edge of the bounding box
-			for ( i = 0; i < 3; i++ ) {
-				if ( origin[ i ] < absBounds[0][ i ] ) {
-					v[ i ] = absBounds[0][ i ] - origin[ i ];
-				} else if ( origin[ i ] > absBounds[1][ i ] ) {
-					v[ i ] = origin[ i ] - absBounds[1][ i ];
-				} else {
-					v[ i ] = 0;
-				}
-			}
-
-			dist = v.Length();
-			if ( dist >= radius ) {
-				continue;
-			}
-
-			if( gameRenderWorld->FastWorldTrace(result, origin, absBounds.GetCenter()) ) {
-				continue;
-			}
-		
-			// Only damage unique entities.  This works because we have a sorted list
-			if( lastEnt == ent ) {
-				continue;
-			}
-
-			lastEnt = ent;
-
-			if ( ent->CanDamage( origin, damagePoint) ) {						
-				// push the center of mass higher than the origin so players
-				// get knocked into the air more
-				if( gameLocal.isMultiplayer ) {
-					// fudge the direction in MP to account for player height difference and origin shift
-					// 31.875 = origin is 23.875 units lower in Q4 than Q3 + player is 8 units taller in Q4
-					dir = ( ent->GetPhysics()->GetOrigin() + idVec3( 0.0f, 0.0f, 31.875f ) ) - origin;
-				} else {
-					dir = ent->GetPhysics()->GetOrigin() - origin;
-				}		
-			
-				dir[2] += 24;
- 
-				dir.Normalize();
-
-				PostEventSec( &EV_Explode, 1 );
-			
-			} 
-		}
-	}
+	
 }
 
 /*
