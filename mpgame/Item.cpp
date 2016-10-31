@@ -593,7 +593,7 @@ bool idItem::GiveToPlayer( idPlayer *player ) {
 	if ( spawnArgs.GetBool( "inv_carry" ) ) {
 		return player->GiveInventoryItem( &spawnArgs );
 	} 
-	
+	//looke
 	// Handle the special ammo pickup that gives ammo for the weapon the player currently has
 	if ( spawnArgs.GetBool( "item_currentWeaponAmmo" ) ) {
 		const char *ammoName = player->weapon->GetAmmoNameForIndex(player->weapon->GetAmmoType());
@@ -1087,7 +1087,8 @@ idItemPowerup::idItemPowerup() {
 	time = 0;
 	type = 0;
 	droppedTime = 0;
-	unique = false;
+	//spryszynski changed to true
+	unique = true;
 }
 
 /*

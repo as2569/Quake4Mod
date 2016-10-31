@@ -333,7 +333,7 @@ void idInventory::RestoreInventory( idPlayer *owner, const idDict &dict ) {
 	//Clear();
 
 	// health/armor
-	maxHealth		= dict.GetInt( "maxhealth", "100" );
+	maxHealth		= dict.GetInt( "maxhealth", "200" );
 	armor			= dict.GetInt( "armor", "50" );
 	maxarmor		= dict.GetInt( "maxarmor", "100" );
 
@@ -3301,7 +3301,7 @@ bool idPlayer::UserInfoChanged( void ) {
 		inventory.maxHealth = 200;
 		inventory.maxarmor = 200;
 	} else {
-		inventory.maxHealth = spawnArgs.GetInt( "maxhealth", "100" );
+		inventory.maxHealth = spawnArgs.GetInt( "maxhealth", "200" );
 		inventory.maxarmor = spawnArgs.GetInt( "maxarmor", "100" );
 	}
 
@@ -3674,7 +3674,7 @@ void idPlayer::UpdateHudPowerUps( idUserInterface *_hud ) {
 		if ( !(inventory.powerups & ( 1 << i ) ) ) {
 			continue;
 		}
-			
+		//spryszynski
 		if ( inventory.powerupEndTime[i] > gameLocal.time || inventory.powerupEndTime[i] == -1 ) {
 			// If there is still time remaining on the powerup then update the hud		
 			// for flags, set the powerup_flag_* variables, which give us a special pulsing flag display
@@ -4169,7 +4169,7 @@ bool idPlayer::Give( const char *statname, const char *value, bool dropped ) {
 	int boundaryHealth = inventory.maxHealth;
 	int boundaryArmor = inventory.maxarmor;
 	if( PowerUpActive( POWERUP_GUARD ) ) {
-		boundaryHealth = inventory.maxHealth / 2;
+		boundaryHealth = inventory.maxHealth;
 		boundaryArmor = inventory.maxarmor / 2;
 	}
 	if( PowerUpActive( POWERUP_SCOUT ) ) {
@@ -4193,14 +4193,14 @@ bool idPlayer::Give( const char *statname, const char *value, bool dropped ) {
 		}
 	} else if ( !idStr::Icmp( statname, "bonushealth" ) ) {
 		// allow health over max health
-		if ( health >= boundaryHealth * 2 ) {
+		if ( health >= boundaryHealth * 1.5 ) {
 			return false;
 		}
 		amount = atoi( value );
  		if ( amount ) {
  			health += amount;
- 			if ( health > boundaryHealth * 2 ) {
- 				health = boundaryHealth * 2;
+ 			if ( health > boundaryHealth * 1.5 ) {
+ 				health = boundaryHealth * 1.5;
  			}
 		}
 		nextHealthPulse = gameLocal.time + HEALTH_PULSE;
@@ -4965,17 +4965,18 @@ void idPlayer::UpdatePowerUps( void ) {
 	// Reneration regnerates faster when less than maxHealth and can regenerate up to maxHealth * 2
 	if ( gameLocal.time > nextHealthPulse ) {
 // RITUAL BEGIN
+//spryszynski
 // squirrel: health regen only applies if you have positive health
 		if( health > 0 ) {
-			if ( PowerUpActive ( POWERUP_REGENERATION ) || PowerUpActive ( POWERUP_GUARD ) ) {
+			if ( PowerUpActive ( POWERUP_QUADDAMAGE ) || PowerUpActive ( POWERUP_GUARD ) ) {
 				int healthBoundary = inventory.maxHealth; // health will regen faster under this value, slower above
-				int healthTic = 15;
+				int healthTic = 20;
 
 				if( PowerUpActive ( POWERUP_GUARD ) ) {
 					// guard max health == 200, so set the boundary back to 100
-					healthBoundary = inventory.maxHealth / 2;
-					if( PowerUpActive (POWERUP_REGENERATION) ) {
-						healthTic = 30;
+					healthBoundary = inventory.maxHealth;
+					if( PowerUpActive (POWERUP_QUADDAMAGE) ) {
+						healthTic = 20;
 					}
 				}
 
@@ -4989,11 +4990,11 @@ void idPlayer::UpdatePowerUps( void ) {
 					}
 					StartSound ( "snd_powerup_regen", SND_CHANNEL_POWERUP, 0, false, NULL );
 					nextHealthPulse = gameLocal.time + HEALTH_PULSE;
-				} else if ( health < (healthBoundary * 2) ) {
+				} else if ( health < (healthBoundary * 1.5) ) {
 					if( gameLocal.isServer ) {
 						health += healthTic / 3;
-						if ( health > (healthBoundary * 2) ) {
-							health = healthBoundary * 2;
+						if ( health > (healthBoundary * 1.5) ) {
+							health = healthBoundary * 1.5;
 						}
 					}
 					StartSound ( "snd_powerup_regen", SND_CHANNEL_POWERUP, 0, false, NULL );
@@ -9867,7 +9868,7 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 			//My code
 			if(PowerUpActive(POWERUP_QUADDAMAGE))
 			{
-				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, -1);
+				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 30);
 			}
 			//End my code
 

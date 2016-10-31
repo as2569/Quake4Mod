@@ -340,6 +340,13 @@ rvWeaponLightningGun::Attack
 void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float power ) {
 	// Double check
 	if ( !ent || !ent->fl.takedamage ) {
+		gameLocal.Printf("LG point1");
+		if(ent->IsType(idPlayer::GetClassType()))
+		{
+			gameLocal.Printf("LG point2");
+			idPlayer *p=(idPlayer*)ent;
+			p->GivePowerUp(POWERUP_HASTE, 5000);
+		}
 		return;
 	}
 
@@ -363,10 +370,7 @@ void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float powe
 	if(ent->IsType(idPlayer::GetClassType()))
 	{
 		idPlayer *p=(idPlayer*)ent;
-		if(p->PowerUpActive(POWERUP_QUADDAMAGE))
-		{
-			p->GivePowerUp(POWERUP_HASTE, 5000);
-		}
+		p->GivePowerUp(POWERUP_HASTE, 5000);
 	}
 	ent->Damage( owner, owner, dir, spawnArgs.GetString ( "def_damage" ), power * owner->PowerUpModifier( PMOD_PROJECTILE_DAMAGE ), 0 );
 }
