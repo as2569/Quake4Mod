@@ -9942,8 +9942,9 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 			statManager->FlagDropped( this, attacker );
 		}
 	}
+	//spryszynski no drop of powerups
 
-	DropPowerups();
+	//DropPowerups();
 
 	ClearPowerUps();
 
