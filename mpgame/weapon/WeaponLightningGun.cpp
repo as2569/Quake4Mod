@@ -337,18 +337,17 @@ void rvWeaponLightningGun::Think ( void ) {
 rvWeaponLightningGun::Attack
 ================
 */
+
 void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float power ) {
 	// Double check
+	//spryszynski
 	if ( !ent || !ent->fl.takedamage ) {
-		gameLocal.Printf("LG point1");
-		if(ent->IsType(idPlayer::GetClassType()))
-		{
-			gameLocal.Printf("LG point2");
-			idPlayer *p=(idPlayer*)ent;
-			p->GivePowerUp(POWERUP_HASTE, 5000);
-		}
 		return;
 	}
+
+	//here
+	gameLocal.Printf(ent->name);
+	inventory.GivePowerUp(idEntity* ent, POWERUP_HASTE, -1);
 
 	// Start a lightning crawl effect every so often
 	// we don't synchronize it, so let's not show it in multiplayer for a listen host. also fixes seeing it on the host from other instances
@@ -365,13 +364,10 @@ void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float powe
 	if( owner->IsType( idPlayer::GetClassType() ) && ent->IsType( idActor::GetClassType() ) && ent != owner && !((idPlayer*)owner)->pfl.dead ) {
 		statManager->WeaponHit( (idActor*)owner, ent, owner->GetCurrentWeapon() );
 	}
-// spryszynski
 // RAVEN END
-	if(ent->IsType(idPlayer::GetClassType()))
-	{
-		idPlayer *p=(idPlayer*)ent;
-		p->GivePowerUp(POWERUP_HASTE, 5000);
-	}
+
+
+		
 	ent->Damage( owner, owner, dir, spawnArgs.GetString ( "def_damage" ), power * owner->PowerUpModifier( PMOD_PROJECTILE_DAMAGE ), 0 );
 }
 

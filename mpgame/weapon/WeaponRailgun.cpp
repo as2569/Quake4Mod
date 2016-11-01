@@ -138,6 +138,7 @@ stateResult_t rvWeaponRailgun::State_Idle( const stateParms_t& parms ) {
 		STAGE_INIT,
 		STAGE_WAIT,
 	};	
+	gameLocal.Printf("railgun ready");
 	switch ( parms.stage ) {
 		case STAGE_INIT:
 			if ( !AmmoAvailable ( ) ) {

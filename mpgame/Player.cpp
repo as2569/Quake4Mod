@@ -3664,14 +3664,16 @@ void idPlayer::UpdateHudWeapon( int displayWeapon ) {
 
 void idPlayer::UpdateHudPowerUps( idUserInterface *_hud ) {
 	assert( _hud );
-	
+	float counttime;
 	int i, index;
 
 	_hud->HandleNamedEvent( "clearPowerups" );
-
+	//spryszynski powerup timer
 	for ( i = 0, index = 0; i < POWERUP_MAX; i++ ) {
 		// Do we have this powerup?
 		if ( !(inventory.powerups & ( 1 << i ) ) ) {
+			counttime = counttime * gameLocal.time;
+			inventory.powerupEndTime[i] = gameLocal.time;
 			continue;
 		}
 		//spryszynski
@@ -9866,9 +9868,11 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 
 			//Give QUAD to my killer if I have QUAD
 			//My code
+			gameLocal.Printf("killer point0");
 			if(PowerUpActive(POWERUP_QUADDAMAGE))
 			{
-				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, 30);
+				gameLocal.Printf("killer point1");
+				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, -1);
 			}
 			//End my code
 
