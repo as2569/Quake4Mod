@@ -4401,11 +4401,11 @@ float idPlayer::PowerUpModifier( int type ) {
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
 			case PMOD_SPEED:	
-				mod *= 0.8f;
+				mod *= 0.5f;
 				break;
 
 			case PMOD_FIRERATE:
-				mod *= 0.5f;
+				mod *= 1.9f;
 				break;
 		}
 	}
@@ -9868,10 +9868,10 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 
 			//Give QUAD to my killer if I have QUAD
 			//My code
-			gameLocal.Printf("killer point0");
+			//gameLocal.Printf("killer point0");
 			if(PowerUpActive(POWERUP_QUADDAMAGE))
 			{
-				gameLocal.Printf("killer point1");
+				//gameLocal.Printf("killer point1");
 				killer -> inventory.GivePowerUp(killer, POWERUP_QUADDAMAGE, -1);
 			}
 			//End my code

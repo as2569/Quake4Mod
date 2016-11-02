@@ -339,16 +339,19 @@ rvWeaponLightningGun::Attack
 */
 
 void rvWeaponLightningGun::Attack ( idEntity* ent, const idVec3& dir, float power ) {
+	idPlayer *attacke;
 	// Double check
 	//spryszynski
 	if ( !ent || !ent->fl.takedamage ) {
 		return;
 	}
 
-	//here
-	gameLocal.Printf(ent->name);
-	inventory.GivePowerUp(idEntity* ent, POWERUP_HASTE, -1);
-
+	//if ( ent->IsType( idPlayer::Type ) ) 
+	attacke = static_cast<idPlayer*>(ent);
+	attacke -> inventory.GivePowerUp(attacke, POWERUP_HASTE, 30);
+	
+	//gameLocal.Printf(ent->name);
+	
 	// Start a lightning crawl effect every so often
 	// we don't synchronize it, so let's not show it in multiplayer for a listen host. also fixes seeing it on the host from other instances
 	if ( !gameLocal.isMultiplayer && gameLocal.time > nextCrawlTime ) {

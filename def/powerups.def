@@ -89,6 +89,7 @@ entityDef powerup_haste
 	"fx_idle"			"effects/mp/haste"
 	
 	"net_syncPhysics"		"1"
+	"time"					"5"
 }
 
 entityDef powerup_regeneration
